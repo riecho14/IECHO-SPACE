@@ -1,6 +1,6 @@
 import * as THREE from 'three'
+import { IechoSpinner, IechoContainer } from './voxel-iecho-loader'
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { Box, Spinner } from '@chakra-ui/react'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 
@@ -103,6 +103,7 @@ const VoxelIECHO = () => {
         renderer.render(scene, camera)
       }
       return () => {
+        console.log('unmount')
         cancelAnimationFrame(req)
         renderer.dispose()
       }
@@ -117,27 +118,9 @@ const VoxelIECHO = () => {
   }, [renderer, handleWindowResize])
 
   return (
-    <Box
-      ref={refContainer}
-      className="voxel-iecho"
-      m="auto"
-      mt={['-290px', '-330px', '-370px']}
-      mb={['230px', '130px', '50px']}
-      w={[280, 480, 640]}
-      h={[280, 480, 640]}
-      position="relative"
-    >
-      {loading && (
-        <Spinner
-          size="xl"
-          position="absolute"
-          left="50%"
-          top="50%"
-          ml="calc(0px - var(--spinner-size)/2)"
-          mt="calc(0px - var(--spinner-size))"
-        />
-      )}
-    </Box>
+    <IechoContainer ref={refContainer}>
+      {loading && <IechoSpinner />}
+    </IechoContainer>
   )
 }
 

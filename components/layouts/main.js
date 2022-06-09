@@ -1,7 +1,13 @@
 import Head from 'next/head'
 import Navbar from '../navbar'
-import VoxelIECHO from '../voxel-iecho'
+import dynamic from 'next/dynamic'
+import VoxelIechoLoader from '../voxel-iecho-loader'
 import { Box, Container } from '@chakra-ui/react'
+
+const LazyIechoLoader = dynamic(() => import('../voxel-iecho'), {
+  ssr: false,
+  loading: () => <VoxelIechoLoader />
+})
 
 const Main = ({ children, router }) => {
   return (
@@ -14,7 +20,7 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        <VoxelIECHO />
+        <LazyIechoLoader />
         {children}
       </Container>
     </Box>
