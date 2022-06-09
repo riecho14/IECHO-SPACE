@@ -17,7 +17,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
@@ -26,6 +26,8 @@ const LinkItem = ({ href, path, children }) => {
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
+        target={target}
+        {...props}
       >
         {children}
       </Link>

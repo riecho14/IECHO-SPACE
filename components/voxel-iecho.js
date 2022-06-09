@@ -95,7 +95,7 @@ const VoxelIECHO = () => {
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
           camera.position.z =
-            p.z * -Math.cos(rotSpeed) + p.x * Math.sin(rotSpeed)
+            p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
           camera.lookAt(target)
         } else {
           controls.update()

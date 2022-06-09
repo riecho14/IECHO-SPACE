@@ -12,6 +12,10 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
+  img {
+    transition: 300ms ease;
+  }
+
   &:hover img {
     transform: rotate(-30deg);
   }
@@ -21,7 +25,7 @@ const Logo = () => {
   const iechoImg = `/images/iecho${useColorModeValue('', '-dark')}.png`
 
   return (
-    <Link href="/">
+    <Link href="/" scroll={false}>
       <a>
         <LogoBox>
           <Image src={iechoImg} width={30} height={23} alt="logo" />

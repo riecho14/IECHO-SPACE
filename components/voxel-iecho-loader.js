@@ -17,8 +17,8 @@ export const IechoContainer = forwardRef(({ children }, ref) => (
     ref={ref}
     className="voxel-iecho"
     m="auto"
-    mt={['-290px', '-330px', '-370px']}
-    mb={['230px', '130px', '50px']}
+    mt={['-20px', '-60px', '-120px']}
+    mb={['-40px', '-140px', '-200px']}
     w={[280, 480, 640]}
     h={[280, 480, 640]}
     position="relative"
