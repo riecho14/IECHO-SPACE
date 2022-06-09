@@ -76,7 +76,7 @@ const Home = () => {
           About me
         </Heading>
         <Paragraph>
-          I am a student at the Sumatera Institute of Technology majoring in
+          I&apos;m a student at the Sumatera Institute of Technology majoring in
           Informatics Engineering. I have a passion for building digital
           services from planning, design to solving real life problems with
           code. When not busy I like to create content on Instagram{' '}
