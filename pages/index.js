@@ -113,7 +113,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioNow>Now</BioNow>
-          Currently completing a Bachelor's Program at the Sumatera Institute of
+          Currently completing a Bachelor&apos;s Program at the Sumatera Institute of
           Technology.
         </BioSection>
       </Section>
