@@ -32,7 +32,8 @@ const Projects = () => (
             title="Readme Icons"
             thumbnail={thumbReadmeIcons}
           >
-            List of icons that have been scaled and padded to work well when used in Github README
+            List of icons that have been scaled and padded to work well when
+            used in Github README
           </ProjectGridItem>
         </Section>
       </SimpleGrid>
