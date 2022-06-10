@@ -92,3 +92,4 @@ const Projects = () => (
 )
 
 export default Projects
+export { getServerSideProps } from '../components/chakra'
