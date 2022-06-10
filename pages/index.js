@@ -90,7 +90,7 @@ const Homepage = () => (
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
               My Portfolio
             </Button>
           </NextLink>
@@ -125,7 +125,7 @@ const Homepage = () => (
             <Link href="https://github.com/riecho14" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="purple"
+                colorScheme="blue"
                 leftIcon={<IoLogoGithub />}
               >
                 riecho14
@@ -136,7 +136,7 @@ const Homepage = () => (
             <Link href="https://www.instagram.com/dooaldood" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="purple"
+                colorScheme="blue"
                 leftIcon={<IoLogoInstagram />}
               >
                 @dooaldood
@@ -147,7 +147,7 @@ const Homepage = () => (
             <Link href="https://www.instagram.com/iechoartwork" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="purple"
+                colorScheme="blue"
                 leftIcon={<IoLogoInstagram />}
               >
                 @iechoartwork
@@ -158,7 +158,7 @@ const Homepage = () => (
             <Link href="https://www.instagram.com/iechospace" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="purple"
+                colorScheme="blue"
                 leftIcon={<IoLogoInstagram />}
               >
                 @iechospace
