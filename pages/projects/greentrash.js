@@ -9,7 +9,6 @@ import {
   List,
   ListItem,
   UnorderedList,
-  Heading,
   Center,
   Image
 } from '@chakra-ui/react'
@@ -25,7 +24,7 @@ const Project = () => (
       </Center>
       <P>
         A script that will graph your GitHub contributions green. This script
-        doesn't encourage you to cheat. Cheating is bad. But if anybody is
+        doesn&apos;t encourage you to cheat. Cheating is bad. But if anybody is
         judging your professional skills by the graph at your GitHub profile
         (which caries no value) they deserve to see a rich graph.
       </P>
