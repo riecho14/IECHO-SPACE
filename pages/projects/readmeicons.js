@@ -31,13 +31,13 @@ const Project = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Example</Meta>
-          <Link href="github.com/riecho14" target="_blank">
+          <Link href="https://github.com/riecho14" target="_blank">
             github.com/riecho14 <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="github.com/riecho14/README_icons" target="_blank">
+          <Link href="https://github.com/riecho14/README_icons" target="_blank">
             github.com/riecho14/README_icons{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
