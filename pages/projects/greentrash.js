@@ -20,7 +20,7 @@ const Project = () => (
         Green Trash <Badge>2022</Badge>
       </Title>
       <Center>
-        <Image src="/images/projects/greentrash/icon.png" alt="icon" />
+        <Image src="/images/projects/greentrash/icon.svg" alt="icon" />
       </Center>
       <P>
         A script that will graph your GitHub contributions green. This script
@@ -28,6 +28,7 @@ const Project = () => (
         judging your professional skills by the graph at your GitHub profile
         (which caries no value) they deserve to see a rich graph.
       </P>
+
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Stack</Meta>
@@ -35,7 +36,7 @@ const Project = () => (
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/riecho14/Green-Trash">
+          <Link href="https://github.com/riecho14/Green-Trash" target="_blank">
             https://github.com/riecho14/Green-Trash{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
