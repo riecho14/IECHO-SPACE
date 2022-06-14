@@ -20,7 +20,12 @@ const Project = () => (
         Green Trash <Badge>2022</Badge>
       </Title>
       <Center>
-        <Image src="/images/projects/greentrash/icon.svg" alt="icon" />
+        <Image
+          width="216px"
+          height="63px"
+          src="/images/projects/greentrash/icon.png"
+          alt="icon"
+        />
       </Center>
       <P>
         A script that will graph your GitHub contributions green. This script
@@ -37,8 +42,7 @@ const Project = () => (
         <ListItem>
           <Meta>Source</Meta>
           <Link href="https://github.com/riecho14/Green-Trash" target="_blank">
-            github.com/riecho14/Green-Trash{' '}
-            <ExternalLinkIcon mx="2px" />
+            github.com/riecho14/Green-Trash <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
