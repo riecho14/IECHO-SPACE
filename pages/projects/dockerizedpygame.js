@@ -8,46 +8,47 @@ import {
   Heading,
   Link,
   List,
-  UnorderedList,
   ListItem,
+  UnorderedList,
   Center,
-  Image
+  Image,
+  AspectRatio
 } from '@chakra-ui/react'
 
 const Project = () => (
-  <Layout title="Dendam Si Tikus">
+  <Layout title="Dockerized PyGame">
     <Container>
       <Title>
-        Dendam Si Tikus <Badge>2022</Badge>
+        Dockerized PyGame <Badge>2022</Badge>
       </Title>
       <Center>
         <Image
           width="216px"
-          height="45px"
-          src="/images/projects/dendamsitikus/icon.png"
+          height="74px"
+          src="/images/projects/dockerizedpygame/icon.png"
           alt="icon"
         />
       </Center>
       <P>
-        Dendam Si Tikus is a game about a mouse who tries to defeat the cat by
-        attacking the cats with poison. This game aims to get as much score as
-        possible by avoiding and defeating the cats that come. Rat&apos;s life
-        will be reduced when the cat touches the mouse. The game will end when
-        the mouse&apos;s life has run out.
+        Docker is a service that provides the ability to package and run an
+        application in an isolated environment called a container. In this case
+        I use docker to run a game I created using PyGame to fulfill one of the
+        tasks assigned to my group
       </P>
 
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Python, PyGame</span>
+          Python, PyGame, Docker
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
           <Link
-            href="https://github.com/riecho14/Dendam-Si-Tikus"
+            href="https://github.com/riecho14/Docker-Dendam-Si-Tikus"
             target="_blank"
           >
-            github.com/riecho14/Dendam-Si-Tikus <ExternalLinkIcon mx="2px" />
+            github.com/riecho14/Docker-Dendam-Si-Tikus{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
@@ -82,14 +83,15 @@ const Project = () => (
         </ListItem>
       </UnorderedList>
 
-      <ProjectImage
-        src="/images/projects/dendamsitikus/image1.png"
-        alt="dendamsitikus"
-      />
-      <ProjectImage
-        src="/images/projects/dendamsitikus/image2.png"
-        alt="dendamsitikus"
-      />
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <iframe
+          src="https://www.youtube.com/embed/SO_tl0iAmhU"
+          title="YouTube Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </AspectRatio>
     </Container>
   </Layout>
 )
