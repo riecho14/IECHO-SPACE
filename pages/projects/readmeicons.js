@@ -53,7 +53,7 @@ const Project = () => (
         <ListItem>
           <Badge mr={2}>Why?</Badge>
           Github saw a lot of changes in the year 2020. With the introduction of
-          Github's mobile app as well as dark mode for Github, it has become
+          Github&apos;s mobile app as well as dark mode for Github, it has become
           really difficult to find icons for READMEs that look good irrespective
           of the platform you are viewing it on.
         </ListItem>
