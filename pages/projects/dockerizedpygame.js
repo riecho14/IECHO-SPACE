@@ -33,7 +33,7 @@ const Project = () => (
         Docker is a service that provides the ability to package and run an
         application in an isolated environment called a container. In this case
         I use docker to run a game I created using PyGame to fulfill one of the
-        tasks assigned to my group
+        tasks assigned to my group.
       </P>
 
       <List ml={4} my={4}>
