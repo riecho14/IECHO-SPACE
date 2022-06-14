@@ -7,10 +7,7 @@ import {
   Badge,
   Link,
   List,
-  ListItem,
-  UnorderedList,
-  Center,
-  Image
+  ListItem
 } from '@chakra-ui/react'
 
 const Project = () => (
