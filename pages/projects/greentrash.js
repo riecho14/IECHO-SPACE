@@ -37,7 +37,7 @@ const Project = () => (
         <ListItem>
           <Meta>Source</Meta>
           <Link href="github.com/riecho14/Green-Trash" target="_blank">
-            https://github.com/riecho14/Green-Trash{' '}
+            github.com/riecho14/Green-Trash{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
