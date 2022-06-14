@@ -62,7 +62,7 @@ const Projects = () => (
             title="Dockerized PyGame"
             thumbnail={thumbDockerizedPyGame}
           >
-            Containerize Pygame with Docker
+            Containerize PyGame with Docker
           </ProjectGridItem>
         </Section>
       </SimpleGrid>
