@@ -1,7 +1,7 @@
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, ProjectImage, Meta } from '../../components/project'
+import { Title, Meta } from '../../components/project'
 import {
   Container,
   Badge,
