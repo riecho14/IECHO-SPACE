@@ -86,7 +86,8 @@ const Homepage = () => (
           <NextLink href="https://www.instagram.com/iechospace" passHref>
             <Link target="_blank">iechospace</Link>
           </NextLink>
-          .
+          . Today made me realize that the goal is not about how high but how
+          free.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>

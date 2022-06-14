@@ -4,7 +4,7 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import { ProjectGridItem } from '../components/grid-item'
 
 import thumbReadmeIcons from '../public/images/projects/thumbReadmeIcons.png'
-import thumbDockerizedPygame from '../public/images/projects/thumbDockerizedPygame.png'
+import thumbDockerizedPyGame from '../public/images/projects/thumbDockerizedPygame.png'
 import thumbDendamSiTikus from '../public/images/projects/thumbDendamSiTikus.png'
 import thumbOldPortfolio from '../public/images/projects/thumbOldPortfolio.png'
 import thumbGreenTrash from '../public/images/projects/thumbGreenTrash.png'
@@ -59,8 +59,8 @@ const Projects = () => (
         <Section delay={0.4}>
           <ProjectGridItem
             id="dockerizedpygame"
-            title="Dockerized Pygame"
-            thumbnail={thumbDockerizedPygame}
+            title="Dockerized PyGame"
+            thumbnail={thumbDockerizedPyGame}
           >
             Containerize Pygame with Docker
           </ProjectGridItem>
