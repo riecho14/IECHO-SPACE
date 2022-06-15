@@ -52,7 +52,7 @@ const VoxelIECHO = () => {
       setRenderer(renderer)
 
       //scale
-      const scale = scH * 0.005 + 14
+      const scale = scH * 0.005 + 12
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
