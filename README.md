@@ -1,4 +1,4 @@
-<img alt="logo" src="https://raw.githubusercontent.com/riecho14/IECHO-SPACE/image_assets/logo.svg" width="400">
+<img alt="logo" src="https://raw.githubusercontent.com/riecho14/IECHO-SPACE/image_assets/logo.svg" width="300">
 
 > New IECHO homepage
 
