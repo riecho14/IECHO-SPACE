@@ -53,7 +53,7 @@ const Projects = () => (
             title="Dendam Si Tikus"
             thumbnail={thumbDendamSiTikus}
           >
-            This project is a game development project using the pygame library
+            This project is a game development project using the PyGame library
           </ProjectGridItem>
         </Section>
         <Section delay={0.4}>
