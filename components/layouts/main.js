@@ -14,6 +14,14 @@ const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
+        <meta property="og:site_name" content="Ericho Aldo Firano" />
+        <meta name="og:title" content="Ericho Aldo Firano" />
+        <meta property="og:type" content="website" />
+        <link rel="iecho-icon" href="iecho.png" />
+        <link rel="shortcut icon" href="/iecho.ico" type="image/x-icon" />
+        <meta name="description" content="IECHO SPACE Homepage" />
+        <meta name="author" content="Ericho Aldo Firano" />
+        <meta name="author" content="IECHO SPACE" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>IECHO SPACE - Homepage</title>
       </Head>

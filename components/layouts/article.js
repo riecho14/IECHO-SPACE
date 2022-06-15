@@ -23,6 +23,7 @@ const Layout = ({ children, title }) => {
         {title && (
           <Head>
             <title>{t}</title>
+            <meta property="og:title" content={t} />
           </Head>
         )}
         {children}
