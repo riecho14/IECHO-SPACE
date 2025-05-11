@@ -8,6 +8,10 @@ import thumbDockerizedPyGame from '../public/images/projects/thumbDockerizedPyga
 import thumbDendamSiTikus from '../public/images/projects/thumbDendamSiTikus.png'
 import thumbOldPortfolio from '../public/images/projects/thumbOldPortfolio.png'
 import thumbGreenTrash from '../public/images/projects/thumbGreenTrash.png'
+import thumbGymtera from '../public/images/projects/thumbGymtera.png'
+import thumbKuma from '../public/images/projects/thumbKuma.png'
+import thumbIcositer from '../public/images/projects/thumbIcositer.png'
+import thumbBard from '../public/images/projects/thumbBard.png'
 
 const Projects = () => (
   <Layout title="Projects">
@@ -23,7 +27,7 @@ const Projects = () => (
             title="Green Trash"
             thumbnail={thumbGreenTrash}
           >
-            A script that will graph your GitHub contributions green
+            A script that will graph your GitHub contributions green.
           </ProjectGridItem>
         </Section>
         <Section>
@@ -33,7 +37,17 @@ const Projects = () => (
             thumbnail={thumbReadmeIcons}
           >
             List of icons that have been scaled and padded to work well when
-            used in Github README
+            used in Github README.
+          </ProjectGridItem>
+        </Section>
+        <Section>
+          <ProjectGridItem
+            id="gymtera"
+            title="Gymtera"
+            thumbnail={thumbGymtera}
+          >
+            An application that will become your personal trainer in doing gym
+            fitness exercises and also comes with features for gym managers.
           </ProjectGridItem>
         </Section>
       </SimpleGrid>
@@ -53,7 +67,7 @@ const Projects = () => (
             title="Dendam Si Tikus"
             thumbnail={thumbDendamSiTikus}
           >
-            This project is a game development project using the PyGame library
+            This project is a game development project using the PyGame library.
           </ProjectGridItem>
         </Section>
         <Section delay={0.4}>
@@ -62,7 +76,28 @@ const Projects = () => (
             title="Dockerized PyGame"
             thumbnail={thumbDockerizedPyGame}
           >
-            Containerize PyGame with Docker
+            Containerize PyGame with Docker.
+          </ProjectGridItem>
+        </Section>
+        <Section delay={0.4}>
+          <ProjectGridItem id="kuma" title="Kuma App" thumbnail={thumbKuma}>
+            an App to understand special children and help the role of parents
+            monitor the child&apos;s condition.
+          </ProjectGridItem>
+        </Section>
+        <Section delay={0.4}>
+          <ProjectGridItem
+            id="icositer"
+            title="ICoSITeR 2022"
+            thumbnail={thumbIcositer}
+          >
+            International Conference on Science, Infrastructure Technology, and
+            Regional Development.
+          </ProjectGridItem>
+        </Section>
+        <Section delay={0.4}>
+          <ProjectGridItem id="bard" title="BARD" thumbnail={thumbBard}>
+            Web-based and mobile food ordering application.
           </ProjectGridItem>
         </Section>
       </SimpleGrid>
@@ -83,7 +118,7 @@ const Projects = () => (
             thumbnail={thumbOldPortfolio}
           >
             The first portfolio website I created using html, css, and
-            javascript
+            javascript.
           </ProjectGridItem>
         </Section>
       </SimpleGrid>

@@ -1,6 +1,17 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import {
+  Box,
+  Text,
+  LinkBox,
+  LinkOverlay,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalBody,
+  ModalCloseButton
+} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -41,6 +52,43 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => (
     </NextLink>
   </Box>
 )
+
+export const ImagePreviewItem = ({ title, thumbnail }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
+  return (
+    <>
+      <Box w="100%" textAlign="center">
+        <LinkBox cursor="pointer" onClick={onOpen}>
+          <Image
+            src={thumbnail}
+            alt={title}
+            className="grid-item-thumbnail"
+            placeholder="blur"
+            onLoad={() => setLoaded(true)}
+          />
+          <Text mt={2} fontSize={20}>
+            {title}
+          </Text>
+        </LinkBox>
+      </Box>
+
+      <Modal isOpen={isOpen} onClose={onClose} size="4xl" isCentered>
+        <ModalOverlay />
+        <ModalContent bg="transparent" boxShadow="none">
+          <ModalCloseButton color="white" />
+          <ModalBody p={0}>
+            <Image
+              src={thumbnail}
+              alt={title}
+              style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
+            />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+}
 
 export const GridItemStyle = () => (
   <Global

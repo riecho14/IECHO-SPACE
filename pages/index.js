@@ -3,12 +3,11 @@ import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import Image from 'next/image'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import { BioSection, BioYear, BioNow } from '../components/bio'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { BioSection, BioYear, FixYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
   Container,
-  chakra,
   Box,
   Link,
   Heading,
@@ -17,10 +16,6 @@ import {
   List,
   ListItem
 } from '@chakra-ui/react'
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
 
 const Homepage = () => (
   <Layout>
@@ -38,21 +33,25 @@ const Homepage = () => (
 
       <Box flexShrink={0} textAlign="center" mb="10" display={{ md: 'flex' }}>
         <Box
+          position="relative"
+          w="100px"
+          h="100px"
           borderColor="whiteAlpha.800"
           borderWidth={2}
           borderStyle="solid"
-          w="100px"
-          h="100px"
           display="inline-block"
           borderRadius="full"
           overflow="hidden"
         >
-          <ProfileImage
+          <Image
             src="/images/aldo.jpg"
             alt="Profile image"
-            borderRadius="full"
-            width="100%"
-            height="100%"
+            fill
+            style={{
+              objectFit: 'cover',
+              borderRadius: '50%',
+              objectPosition: 'center 15%'
+            }}
           />
         </Box>
 
@@ -65,7 +64,7 @@ const Homepage = () => (
           <Heading as="h2" variant="page-title">
             Ericho Aldo Firano
           </Heading>
-          <p>Live in restlessness, then you will think</p>
+          <p>Digital Builder (Web & Mobile Developer)</p>
         </Box>
       </Box>
 
@@ -74,20 +73,16 @@ const Homepage = () => (
           About me
         </Heading>
         <Paragraph>
-          I&apos;m a student at the Sumatera Institute of Technology majoring in
-          Informatics Engineering. I have a passion for building digital
-          services from planning, design to solving real life problems with
-          code. When not busy I like to create content on Instagram{' '}
-          <NextLink href="https://www.instagram.com/iechoartwork" passHref>
-            <Link target="_blank">iechoartwork </Link>
-          </NextLink>
-          to draw illustrations and besides that I also like to share
-          interesting ideas that are on my mind which I call{' '}
-          <NextLink href="https://www.instagram.com/iechospace" passHref>
-            <Link target="_blank">iechospace</Link>
-          </NextLink>
-          . Today made me realize that the goal is not about how high but how
-          free.
+          As a graduate of Informatics Engineering from Institut Teknologi
+          Sumatera (ITERA) with a specialization in Information Technology, I
+          have expertise as a Web & Mobile Developer who is ready to face the
+          dynamics of the digital industry. Armed with an analytical and
+          creative approach, I am committed to developing innovative and
+          effective technology solutions. I am known as a proactive,
+          communicative, and result-oriented person, always ready to work
+          together in a team and continue to develop my skills to make the best
+          contribution in this field. Today made me realize that the goal is not
+          about how high but how free.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
@@ -103,17 +98,17 @@ const Homepage = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2001</BioYear>
+          <FixYear>2001</FixYear>
           Born in Yogyakarta, Indonesia.
         </BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Graduated from SMA Negeri 3 Martapura.
+          Graduated from SMA Negeri 3 Martapura
         </BioSection>
         <BioSection>
-          <BioNow>Now</BioNow>
-          Currently completing a Bachelor&apos;s Program at the Sumatera
-          Institute of Technology.
+          <BioYear>2024</BioYear>
+          Graduated with a degree in Informatics Engineering from Institut
+          Teknologi Sumatera.
         </BioSection>
       </Section>
 
@@ -130,6 +125,17 @@ const Homepage = () => (
                 leftIcon={<IoLogoGithub />}
               >
                 riecho14
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/dooaldood/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="blue"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                dooaldood
               </Button>
             </Link>
           </ListItem>
@@ -152,17 +158,6 @@ const Homepage = () => (
                 leftIcon={<IoLogoInstagram />}
               >
                 @iechoartwork
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://www.instagram.com/iechospace" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="blue"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @iechospace
               </Button>
             </Link>
           </ListItem>
