@@ -12,7 +12,8 @@ import {
   ListItem,
   UnorderedList,
   Center,
-  Image
+  Image,
+  AspectRatio
 } from '@chakra-ui/react'
 
 const Project = () => (
@@ -58,20 +59,15 @@ const Project = () => (
         <Heading as="h4" fontSize={18} my={6}>
           <Center>Video App Demo</Center>
         </Heading>
-        <Center my={6}>
-          <Box w="100%" maxW="560px" aspectRatio={16 / 9}>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/qKRzuptWHgs?si=VvKDghWODpxED9Kn"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </Box>
-        </Center>
+        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+          <iframe
+            src="https://www.youtube.com/embed/qKRzuptWHgs?si=VvKDghWODpxED9Kn"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </AspectRatio>
       </UnorderedList>
     </Container>
   </Layout>
