@@ -4,7 +4,6 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/project'
 import {
   Container,
-  Box,
   Heading,
   Badge,
   Link,
